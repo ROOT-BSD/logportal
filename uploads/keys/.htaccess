@@ -1,0 +1,5 @@
+# Заборона прямого доступу до SSH-ключів
+<FilesMatch ".*">
+    Order deny,allow
+    Deny from all
+</FilesMatch>

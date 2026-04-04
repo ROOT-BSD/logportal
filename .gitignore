@@ -1,0 +1,52 @@
+# ════════════════════════════════════════
+#  LogPortal — .gitignore
+# ════════════════════════════════════════
+
+# ── Конфігурація (чутливі дані) ──
+config.php
+.env
+
+# ── База даних ──
+data/*.db
+data/*.db-shm
+data/*.db-wal
+data/*.sqlite
+
+# ── SSH ключі користувачів ──
+uploads/keys/*.pem
+uploads/keys/*.key
+uploads/keys/*.rsa
+uploads/keys/*.pub
+uploads/keys/key_*
+
+# ── Системні файли ──
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# ── IDE / редактори ──
+.idea/
+.vscode/
+*.swp
+*.swo
+*~
+
+# ── PHP ──
+*.log
+php_errors.log
+/tmp/
+
+# ── Composer (якщо буде) ──
+vendor/
+composer.lock
+
+# ── Логи та тимчасові файли ──
+*.tmp
+*.bak
+*.orig
+
+# Зберігаємо структуру директорій через .gitkeep
+!data/.gitkeep
+!data/.htaccess
+!uploads/keys/.gitkeep
+!uploads/keys/.htaccess
